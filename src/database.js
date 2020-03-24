@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = process.env.MONGODB_URL;
+const URI = 'mongodb+srv://ptn:ptn123@cluster0-gfimd.mongodb.net/plathanus?retryWrites=true&w=majority';
 
 mongoose.connect(URI)
     .then(db => console.log('Banco conectado'))
