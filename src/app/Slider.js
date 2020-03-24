@@ -54,12 +54,12 @@ class Slider extends Component {
                     <button>WORK WHIT US</button>
                 </div>
             </div>
-            <button id="paraEsquerda" onClick={this.paraEsquerda}>
+            {<!-- <button id="paraEsquerda" onClick={this.paraEsquerda}>
                 <i className="material-icons">keyboard_arrow_left</i>
             </button>
             <button id="paraDireita" onClick={this.paraDireita}>
                 <i className="material-icons">keyboard_arrow_right</i>
-            </button>
+            </button> -->}
         </div>
         )
     }
