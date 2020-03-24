@@ -9,6 +9,8 @@ class Slider extends Component {
             photos: [],
             x: 0 
         };
+        this.paraDireita = this.paraDireita.bind(this);
+        this.paraEsquerda = this.paraEsquerda.bind(this);
         this.fetchPhotos();
     }
 
