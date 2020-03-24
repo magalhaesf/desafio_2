@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://ptn:ptn123@cluster0-gfimd.mongodb.net/test?retryWrites=true&w=majority';
+const URI = MONGODB_URL;
 
 mongoose.connect(URI)
     .then(db => console.log('Banco conectado'))
