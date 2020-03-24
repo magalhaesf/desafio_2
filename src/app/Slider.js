@@ -46,15 +46,21 @@ class Slider extends Component {
                     )
                 })
             }
-            <div className="divUpImg">
-                <div className="titleImg center">
-                    <h4>Art Is Eternal Happiness</h4>
+                <div className="divUpImg">
+                    <div className="titleImg center">
+                        <h4>Art Is Eternal Happiness</h4>
+                    </div>
+                    <div className="btnImg center">
+                        <button>WORK WHIT US</button>
+                    </div>
                 </div>
-                <div className="btnImg center">
-                    <button>WORK WHIT US</button>
-                </div>
+                <button id="paraEsquerda" onClick={this.paraEsquerda}>
+                    <i className="material-icons">keyboard_arrow_left</i>
+                </button>
+                <button id="paraDireita" onClick={this.paraDireita}>
+                    <i className="material-icons">keyboard_arrow_right</i>
+                </button>
             </div>
-        </div>
         )
     }
     
