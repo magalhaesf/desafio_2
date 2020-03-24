@@ -7,7 +7,7 @@ Para o desafio foram utilizadas a tecnologias:
 - Express;
 - MongoDB.
 
-Após realizar o download é necessario estar com o MongoDb instalado e devidamente configurado no arquivo (src/models/photo.js), apos isso apenas abrir o projeto e executar:
+Após realizar o download é necessario estar com o MongoDb instalado e devidamente configurado no arquivo (src/database.js), apos isso apenas abrir o projeto e executar:
 
 (Baixar as dependências)
 - npm install --production
