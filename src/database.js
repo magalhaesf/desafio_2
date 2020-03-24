@@ -1,9 +1,19 @@
 const mongoose = require('mongoose');
 
-const URI = process.env.MONGODB_URI;
+const db = process.env.MONGODB_URI;
 
-mongoose.connect(URI)
-    .then(db => console.log('Banco conectado'))
-    .catch(err => console.error(err));
+const connectDB = async () => {
+  try {
+    await mongoose.connect(db, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true
+    });
+    console.log("MongoDB is Connected...");
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+};
+
 
 module.exports = mongoose;
