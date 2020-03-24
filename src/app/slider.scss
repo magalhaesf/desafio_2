@@ -1,0 +1,84 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+%btn-style {
+    position: absolute;
+    top: calc(64px + ((100vh - 64px) /2));
+    transform: translateY(-50%);
+    width: 3%;
+    height: calc(100vh - 64px);
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+
+%btn-style:hover {
+    background-color: rgba(255,255,255,0.3); 
+    color: black;
+}
+
+#paraEsquerda {
+    left: 0;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    @extend %btn-style;
+}
+
+#paraDireita {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    right: 0;
+    @extend %btn-style;
+}
+
+.divUpImg {
+    position: absolute;
+    width: 100%;
+}
+
+.titleImg {
+    font-family: Courier, 'Courier New', monospace;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.btnImg {
+    margin-top: 6em;
+}
+
+.btnImg button {
+    border: none;
+    background-color: rgba(0,100,0, 0.7);
+    height: 40px;
+    width: 160px;
+    border-radius: 2em;
+    color: back;
+    font-weight: bold;
+}
+
+.btnImg button:hover {
+    background-color: rgb(0, 100, 0);
+}

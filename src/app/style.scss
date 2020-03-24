@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgba(34,139,34, 0.5);
+}
+
+nav {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+}
+
+.navbar-fixed {
+    position: absolute;
+}
+
+nav > .input-field {
+    background-color: rgba(255,255,255,0);
+}
+
+.nav-wrapper .input-field input[type="search"] {
+    height: 50%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+	padding-left: 4rem;
+	width: calc(100% - 7rem);
+	border: 0;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 3em;
+}
+
+.input-field input[type="search"]:focus:not(.browser-default) {
+	background-color: rgba(255,255,255,0.8);
+}
+
+nav ul a:hover, nav ul a:active, nav ul a:focus, nav ul a.active, nav ul a.focus {
+    background-color: rgba(255,255,255,0);
+    border-top: 5px solid aqua;
+}
+
+.container {
+    height: 100vh;
+    padding-top: 64px;
+}
+
+.formContact {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 2em;
+    margin: 10px;
+}
+
+.input-field > label {
+    color: black;
+}
